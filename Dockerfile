@@ -10,5 +10,3 @@ RUN sudo apt-get update \
  && sudo rm -rf /var/lib/apt/lists/*
 
 COPY pytorch_test.py pytorch_test.py
-
-RUN python pytorch_test.py
