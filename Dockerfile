@@ -4,7 +4,7 @@ FROM anibali/pytorch:1.13.0-cuda11.8-ubuntu22.04
 ENV TZ=CEST
 RUN sudo ln -snf /usr/share/zoneinfo/$TZ /etc/localtime
 
-# Install system libraries required by OpenCV.
+# Install system libraries required
 RUN sudo apt-get update \
  && sudo apt-get install -y git \
  && sudo rm -rf /var/lib/apt/lists/*
